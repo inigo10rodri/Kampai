@@ -1,11 +1,16 @@
 
 html, body {
-    background-color: red;
+
     color: #636b6f;
-    font-family: 'Raleway', sans-serif;
+    background-color: #313131;
     font-weight: 100;
     height: 100vh;
     margin: 0;
+}
+@font-face {
+    font-family: ZenzaiItacha;
+    src: url('../font/ZenzaiItacha.ttf');
+
 }
 
 .full-height {
@@ -16,7 +21,7 @@ html, body {
     align-items: center;
     display: flex;
     justify-content: center;
-    background-color: yellow;
+
 }
 
 .position-ref {
@@ -31,34 +36,27 @@ html, body {
 
 .content {
     text-align: center;
-    background-color: #46b8da;
+
 }
 
 .title {
-    font-size: 84px;
-    background-color: green;
+    font-size: 114px;
+    color: white;
+    font-family: ZenzaiItacha;
+    text-shadow: 5px 5px 5px black;
 }
 
 .links > a {
-    color: #636b6f;
+    color: white;
     padding: 0 25px;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: .1rem;
-    text-decoration: none;
     text-transform: uppercase;
-    background-color: deeppink;
+    text-shadow: 1px 1px 1px black;
 }
 
 .m-b-md {
     margin-bottom: 30px;
-    
-}
-#pensar{
-    width: 500px;
-    height: 300px;
-    background-image: url('../image/pensando.jpg');
-    background-repeat: no-repeat;
-
 
 }

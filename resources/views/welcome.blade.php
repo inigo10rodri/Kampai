@@ -29,16 +29,14 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Bottom’s app!
+                    Kampai
                 </div>
 
                 <div class="links">
                     <a href="{{ route('register') }}">¡Encuentra lo que buscas!</a>
 
                 </div>
-                <div id="pensar">
 
-                </div>
             </div>
         </div>
     </body>
