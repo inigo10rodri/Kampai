@@ -1,6 +1,6 @@
 
 html, body {
-    background-color: #fff;
+    background-color: red;
     color: #636b6f;
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
@@ -16,6 +16,7 @@ html, body {
     align-items: center;
     display: flex;
     justify-content: center;
+    background-color: yellow;
 }
 
 .position-ref {
@@ -30,10 +31,12 @@ html, body {
 
 .content {
     text-align: center;
+    background-color: #46b8da;
 }
 
 .title {
     font-size: 84px;
+    background-color: green;
 }
 
 .links > a {
@@ -44,8 +47,18 @@ html, body {
     letter-spacing: .1rem;
     text-decoration: none;
     text-transform: uppercase;
+    background-color: deeppink;
 }
 
 .m-b-md {
     margin-bottom: 30px;
+    
+}
+#pensar{
+    width: 500px;
+    height: 300px;
+    background-image: url('../image/pensando.jpg');
+    background-repeat: no-repeat;
+
+
 }
