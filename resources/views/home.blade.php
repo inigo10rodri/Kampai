@@ -15,6 +15,7 @@
                     @endif
 
                     You are logged in!
+                    <a href="/mapa">click para el mapa</a>
                 </div>
             </div>
         </div>
