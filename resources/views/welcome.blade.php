@@ -107,7 +107,22 @@
                 <div class="title">
                     Busca,come,bebe,disfruta!
                 </div>
+
                </div>
+                <div id="info">
+                    <div id="pnaizq">
+                        <h2>¿Tienes sed?¿Tienes hambre?</h2>
+                        <h3>Kampai compara entre miles de bares y restaurantes para encontrar lo que buscas</h3>
+                    </div>
+                    <div id="pnadr">
+                        <div id="cuadrin">
+                            <div id="abu"></div>
+                            <h2>Rapido y facil de usar!</h2>
+                            <h4>-Abuela Carmen premiun user</h4>
+                        </div>
+                    </div>
+
+                </div>
                 <div id="mapid"></div>
                 <script type="text/javascript">
 
@@ -115,6 +130,10 @@
 
                 </script>
 
+            </div>
+            <div id="foot">
+                Futuro footer!
+                Con las redes sociales y esas cosas!
             </div>
 
 
