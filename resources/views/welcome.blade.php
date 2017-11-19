@@ -15,6 +15,7 @@
         <link href="css/estiloWelcome.css" rel="stylesheet" type="text/css">
     </head>
     <body>
+
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
