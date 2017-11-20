@@ -26,3 +26,10 @@ Route::get('/formularios', function () {
 Route::post('/formularios', function () {
     return view('formularios');
 });
+
+Route::post('/comidassel', function () {
+    return view('comidassel');
+});
+Route::get('/comidassel', function () {
+    return view('comidassel');
+});

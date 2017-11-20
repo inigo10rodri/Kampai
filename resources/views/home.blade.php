@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Formulario</div>
+                <div class="panel-heading">¿Que te apetece?</div>
 
                 <div class="panel-body">
                     <form class="inicio" method="post" action="formularios">
@@ -22,7 +22,10 @@
                             <input type="radio" value="bebcom" name="accion"/>
                             <label>Comer y beber</label><br>
                         </div>
-                        <input type="submit" class="btn btn-default" value="Siguiente"/>
+                        <div id="boton">
+                            <input type="submit" class="btn btn-default" value="Siguiente" />
+                        </div>
+
                     </form>
                 </div>
             </div>

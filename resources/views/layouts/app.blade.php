@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="css/estiloWelcome.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div id="app">
