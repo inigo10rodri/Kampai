@@ -42,14 +42,15 @@
                                 </div>
                             </form>
                         @elseif ($_POST['accion'] == "beber")
-                            <form class="bebida">
+                            <form class="bebida" method="post" action="bebidassel">
+                                {{ csrf_field()}}
                                 <h2>Bebidas</h2>
                                 <div>
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" value="alcoholicas" name="bebidas" />
                                     <label>Alcoholicas</label><br>
                                 </div>
                                 <div>
-                                    <input type="checkbox" value="" />
+                                    <input type="radio" value="noAlcoholicas" name="bebidas" />
                                     <label>No alcoholicas</label><br>
                                 </div>
                                 <div id="boton">
@@ -60,36 +61,36 @@
                             <form class="bebcom">
                                 <h2>Comida</h2>
                                 <div>
-                                    <input type="checkbox" value="" />
+                                    <input type="checkbox" value="pintxos" name="comida[]" />
                                     <label>Pintxos</label><br>
                                 </div>
                                 <div>
-                                    <input type="checkbox" value="" />
+                                    <input type="checkbox" value="aperitivos" name="comida[]" />
                                     <label>Aperitivos</label><br>
                                 </div>
                                 <div >
-                                    <input type="checkbox" value="" />
+                                    <input type="checkbox" value="bocatas" name="comida[]" />
                                     <label>Bocatas</label><br>
                                 </div>
                                 <div>
-                                    <input type="checkbox" value="" />
+                                    <input type="checkbox" value="raciones" name="comida[]" />
                                     <label>Raciones</label><br>
                                 </div>
                                 <div>
-                                    <input type="checkbox" value="" />
+                                    <input type="checkbox" value="menus" name="comida[]" />
                                     <label>Menus</label><br>
                                 </div>
                                 <div>
-                                    <input type="checkbox" value="" />
+                                    <input type="checkbox" value="pizzas" name="comida[]" />
                                     <label>Pizzas</label><br>
                                 </div>
                                 <h2>Bebidas</h2>
                                 <div>
-                                    <input type="checkbox" value="" />
+                                    <input type="checkbox" value="alcoholicas" name="bebida[]"/>
                                     <label>Alcoholicas</label><br>
                                 </div>
                                 <div>
-                                    <input type="checkbox" value="" />
+                                    <input type="checkbox" value="noalcoholicas" name="bebida[]" />
                                     <label>No alcoholicas</label><br>
                                 </div>
                                 <div id="boton">

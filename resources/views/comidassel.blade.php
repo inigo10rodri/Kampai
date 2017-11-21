@@ -25,6 +25,30 @@
                                     <input type="checkbox" value="alioli" name=""/>
                                     <label>Patatas ali-oli</label><br>
                                 </div>
+                                @elseif($comida =="bocatas")
+                                    <h2>Bocatas</h2>
+                                    <div>
+                                        <input type="checkbox" value="serrano" name=""/>
+                                        <label>Jamon Serrano</label><br>
+                                    </div>
+                                @elseif($comida =="raciones")
+                                    <h2>Raciones</h2>
+                                    <div>
+                                        <input type="checkbox" value="calamares" name=""/>
+                                        <label>Calamares</label><br>
+                                    </div>
+                                @elseif($comida =="menus")
+                                    <h2>Menus</h2>
+                                    <div>
+                                        <input type="checkbox" value="menudia" name=""/>
+                                        <label>Menu del dia</label><br>
+                                    </div>
+                                @elseif($comida =="pizzas")
+                                    <h2>Pizzas</h2>
+                                    <div>
+                                        <input type="checkbox" value="carbonara" name=""/>
+                                        <label>Pizza carbonara</label><br>
+                                    </div>
                               @endif
                         @endforeach
 
