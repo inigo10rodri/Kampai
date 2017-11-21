@@ -38,4 +38,7 @@ Route::get('/bebidassel', function () {
 });
 Route::post('/bebidassel', function () {
     return view('bebidassel');
+
+  Route::get('/mapa', function () {
+    return view('mapa');
 });
