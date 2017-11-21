@@ -13,33 +13,142 @@
         <!-- Styles -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="css/estiloWelcome.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+              integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+              crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+                integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+                crossorigin=""></script>
+        <script>
+
+            function initmap()
+            {
+                var mymap = L.map('mapid').setView([ 43.3172,-1.97325],17);
+
+                L.tileLayer('https://api.mapbox.com/styles/v1/marborav/cj9x42mma6cqq2sp7e7gadryt/tiles/256/{z}/{x}/{y}?access_token={accessToken}', {
+                    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+                    maxZoom: 20,
+                    id: 'mapbox.streets',
+                    accessToken: 'pk.eyJ1IjoibWFyYm9yYXYiLCJhIjoiY2o5eDJrbTV0N2NncjJxcXljeDR3cXNhMiJ9.igTamTLm4nLiAN6w8NFS6Q'
+                }).addTo(mymap);
+
+                var marker = L.marker([51.5, -0.09]).addTo(mymap);
+
+
+            }
+
+            function onMapClick(e) {
+                popup.setLatLng(e.latlng).setContent("You clicked the map at " + e.latlng.toString()).openOn(mymap);
+            }
+
+        </script>
+
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+                <!-- Collapsed Hamburger -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                <!-- Branding Image -->
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    {{ config('app.name', 'Kampai') }}
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                <!-- Left Side Of Navbar -->
+                <ul class="nav navbar-nav">
+                    &nbsp;
+                </ul>
+
+                <!-- Right Side Of Navbar -->
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Authentication Links -->
+                    @guest
+                        <li><a href="{{ route('login') }}">Login</a></li>
+                        <li><a href="{{ route('register') }}">Register</a></li>
+                        @else
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="{{ route('logout') }}"
+                                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                            @endguest
+                </ul>
             </div>
         </div>
+    </nav>
+
+
+            <div class="content">
+               <div id="brindis">
+                <div class="title">
+                    Busca,come,bebe,disfruta!
+                </div>
+
+               </div>
+                <div id="info">
+                    <div id="pnaizq">
+                        <i class="fa fa-beer fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-cutlery fa-2x" aria-hidden="true"></i>
+                        <div class="clearfix"></div>
+                        <h2>¿Tienes sed?¿Tienes hambre?</h2>
+                        <h4><i>Kampai compara entre miles de bares y restaurantes para encontrar lo que buscas</i></h4>
+                        <h2>3 simples pasos para usar nuestra app</h2>
+
+                        <h4><i>1-Registrate si no estas registrado</i></h4>
+                        <h4><i>2-Rellena nuestro formulario</i></h4>
+                        <h4><i>3-Elige entre los diferentes sitios del mapa</i></h4>
+
+                    </div>
+                    <div id="pnadr">
+                        <div id="cuadrin">
+                            <div id="abu"></div>
+                            <h2>Rapido y facil de usar!</h2>
+                            <h4>-Abuela Carmen premiun user</h4>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="mapid"></div>
+                <script type="text/javascript">
+
+                    initmap();
+
+                </script>
+
+            </div>
+            <div id="foot">
+                <a href="http://www.youtube.com" target="_blank" class="youtube"><span class="fa fa-youtube"></span> </a>
+                <a href="http://www.facebook.com" target="_blank" class="facebook"><span class="fa fa-facebook"></span> </a>
+                <a href="http://twitter.com" target="_blank" class="twitter"><span class="fa fa-twitter"></span> </a>
+                <a href="http://www.instagram.com" target="_blank" class="instagram"><span class="fa fa-instagram"></span> </a>
+                <p>Todos los derechos reservados equipo Ninja Purpura 2017&copy;</p>
+            </div>
+
+
     </body>
 </html>

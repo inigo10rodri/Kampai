@@ -18,3 +18,27 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/formularios', function () {
+    return view('formularios');
+});
+
+Route::post('/formularios', function () {
+    return view('formularios');
+});
+
+Route::post('/comidassel', function () {
+    return view('comidassel');
+});
+Route::get('/comidassel', function () {
+    return view('comidassel');
+});
+Route::get('/bebidassel', function () {
+    return view('bebidassel');
+});
+Route::post('/bebidassel', function () {
+    return view('bebidassel');
+
+  Route::get('/mapa', function () {
+    return view('mapa');
+});

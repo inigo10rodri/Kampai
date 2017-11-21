@@ -1,11 +1,22 @@
 
 html, body {
-    background-color: #fff;
+
     color: #636b6f;
-    font-family: 'Raleway', sans-serif;
+    background-color: whitesmoke;
     font-weight: 100;
     height: 100vh;
     margin: 0;
+    font-family: Poetsen;
+}
+@font-face {
+    font-family: ZenzaiItacha;
+    src: url('../font/ZenzaiItacha.ttf');
+
+}
+@font-face {
+    font-family: Poetsen;
+    src: url('../font/PoetsenOne-Regular.ttf');
+
 }
 
 .full-height {
@@ -16,6 +27,7 @@ html, body {
     align-items: center;
     display: flex;
     justify-content: center;
+
 }
 
 .position-ref {
@@ -30,22 +42,181 @@ html, body {
 
 .content {
     text-align: center;
-}
 
+}
+.navbar{
+    margin-bottom: 0px;
+}
+.navbar-default{
+    background-color: #313131;
+
+}
+.navbar-brand{
+    margin-top: 10px;
+    font-family: ZenzaiItacha;
+    font-size: 42px;
+    color: white;
+}
+.navbar-inverse .navbar-brand{
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-weight: 700;
+    font-size: 18px;
+}
 .title {
-    font-size: 84px;
+    font-size: 44px;
+    color: white;
+    font-family: Poetsen;
+    text-shadow: 0px 0px 3px black;
+    margin: auto;
+    padding-top: 250px;
 }
 
 .links > a {
-    color: #636b6f;
+    color: white;
     padding: 0 25px;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: .1rem;
-    text-decoration: none;
     text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
 }
 
 .m-b-md {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+
+}
+#brindis{
+    background-image: url("/image/chinchin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed ;
+    height: 650px;
+    width: 100%;
+    max-width: 100%;
+    padding:0;
+    margin:0;
+    margin-top: 0px;
+}
+#mapid {
+    height: 450px;
+    width: 100%;
+    max-width: 100%;
+    padding:0;
+    margin:0;
+}
+#info{
+    height: 400px;
+    width: 100%;
+    max-width: 100%;
+    padding:0;
+    margin:0;
+    background-color: whitesmoke;
+
+}
+#pnaizq{
+    padding-top: 20px;
+    color: black;
+    width: 50%;
+    float: left;
+}
+.fa-beer{
+    size: 40px;
+    float: left;
+    margin-left: 5%;
+    color: black;
+    text-shadow: 2px 2px 2px grey;
+}
+.fa-cutlery{
+    size: 40px;
+    float: left;
+    margin-left: 10px;
+    color: black;
+    text-shadow: 2px 2px 2px grey;
+}
+#pnaizq h2{
+
+    margin-left: 5%;
+    text-align: left;
+
+}
+#pnaizq h4{
+
+    margin-left: 5%;
+    color: grey;
+    text-align: left;
+}
+.button{
+    float: left;
+    margin: 5%;
+    height: 50px;
+    width: 50px;
+    font-size: 18px;
+}
+#pnadr{
+    padding-top: 20px;
+    color: black;
+    width: 50%;
+    float: right;
+}
+#cuadrin{
+    background-color: white;
+    border: solid 1px grey;
+    margin: 10px;
+    margin-left: 50px;
+    height: 200px;
+    width: auto;
+}
+#abu{
+    background-image: url("/image/abuela.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 198px;
+    width: 250px;
+    float: left;
+    margin-left: 1px;
+
+}
+#cuadrin>h2{
+    float: left;
+    margin-left: 20px;
+}
+#cuadrin>h4{
+    float: left;
+    margin-left: 20px;
+    color: grey;
+}
+
+#foot{
+    height: 100px;
+    width: 100%;
+    max-width: 100%;
+    padding:0;
+    margin:0;
+    background-color: whitesmoke;
+    text-align: center;
+    padding-top: 10px;
+}
+.youtube{
+    font-size: 40px;
+    color: black;
+}
+.facebook{
+    font-size: 40px;
+    color: black;
+}
+.twitter{
+    font-size: 40px;
+    color: black;
+}
+.instagram{
+    font-size: 40px;
+    color: black;
+}
+#boton{
+    float: right;
 }
