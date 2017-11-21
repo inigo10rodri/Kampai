@@ -19,6 +19,15 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
+
+/*
+Map route
+*/
+Route::get('/map', function(){
+    return view('map.map');
+  });
+
 Route::get('/formularios', function () {
     return view('formularios');
 });
@@ -36,6 +45,7 @@ Route::get('/comidassel', function () {
 Route::get('/bebidassel', function () {
     return view('bebidassel');
 });
+
 Route::post('/bebidassel', function () {
     return view('bebidassel');
 
