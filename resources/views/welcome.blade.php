@@ -13,6 +13,7 @@
         <!-- Styles -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="css/estiloWelcome.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
               integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
               crossorigin=""/>
@@ -111,8 +112,17 @@
                </div>
                 <div id="info">
                     <div id="pnaizq">
+                        <i class="fa fa-beer fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-cutlery fa-2x" aria-hidden="true"></i>
+                        <div class="clearfix"></div>
                         <h2>¿Tienes sed?¿Tienes hambre?</h2>
-                        <h3>Kampai compara entre miles de bares y restaurantes para encontrar lo que buscas</h3>
+                        <h4><i>Kampai compara entre miles de bares y restaurantes para encontrar lo que buscas</i></h4>
+                        <h2>3 simples pasos para usar nuestra app</h2>
+
+                        <h4><i>1-Registrate si no estas registrado</i></h4>
+                        <h4><i>2-Rellena nuestro formulario</i></h4>
+                        <h4><i>3-Elige entre los diferentes sitios del mapa</i></h4>
+
                     </div>
                     <div id="pnadr">
                         <div id="cuadrin">
@@ -132,8 +142,11 @@
 
             </div>
             <div id="foot">
-                Futuro footer!
-                Con las redes sociales y esas cosas!
+                <a href="http://www.youtube.com" target="_blank" class="youtube"><span class="fa fa-youtube"></span> </a>
+                <a href="http://www.facebook.com" target="_blank" class="facebook"><span class="fa fa-facebook"></span> </a>
+                <a href="http://twitter.com" target="_blank" class="twitter"><span class="fa fa-twitter"></span> </a>
+                <a href="http://www.instagram.com" target="_blank" class="instagram"><span class="fa fa-instagram"></span> </a>
+                <p>Todos los derechos reservados equipo Ninja Purpura 2017&copy;</p>
             </div>
 
 

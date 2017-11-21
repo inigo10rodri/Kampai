@@ -6,10 +6,16 @@ html, body {
     font-weight: 100;
     height: 100vh;
     margin: 0;
+    font-family: Poetsen;
 }
 @font-face {
     font-family: ZenzaiItacha;
     src: url('../font/ZenzaiItacha.ttf');
+
+}
+@font-face {
+    font-family: Poetsen;
+    src: url('../font/PoetsenOne-Regular.ttf');
 
 }
 
@@ -59,12 +65,13 @@ html, body {
     color: white;
     text-shadow: 3px 3px 3px black;
     font-weight: 700;
+    font-size: 18px;
 }
 .title {
     font-size: 44px;
     color: white;
-    font-family: Arial;
-    text-shadow: 3px 3px 2px black;
+    font-family: Poetsen;
+    text-shadow: 0px 0px 3px black;
     margin: auto;
     padding-top: 250px;
 }
@@ -72,7 +79,7 @@ html, body {
 .links > a {
     color: white;
     padding: 0 25px;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: .1rem;
     text-transform: uppercase;
@@ -88,7 +95,7 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment:fixed ;
-    height: 600px;
+    height: 650px;
     width: 100%;
     max-width: 100%;
     padding:0;
@@ -117,23 +124,44 @@ html, body {
     width: 50%;
     float: left;
 }
-#pnaizq>h2{
+.fa-beer{
+    size: 40px;
     float: left;
+    margin-left: 5%;
+    color: black;
+    text-shadow: 2px 2px 2px grey;
+}
+.fa-cutlery{
+    size: 40px;
+    float: left;
+    margin-left: 10px;
+    color: black;
+    text-shadow: 2px 2px 2px grey;
+}
+#pnaizq h2{
+
     margin-left: 5%;
     text-align: left;
 
 }
-#pnaizq>h3{
-    float: left;
+#pnaizq h4{
+
     margin-left: 5%;
     color: grey;
     text-align: left;
+}
+.button{
+    float: left;
+    margin: 5%;
+    height: 50px;
+    width: 50px;
+    font-size: 18px;
 }
 #pnadr{
     padding-top: 20px;
     color: black;
     width: 50%;
-    float: left;
+    float: right;
 }
 #cuadrin{
     background-color: white;
@@ -150,6 +178,7 @@ html, body {
     height: 198px;
     width: 250px;
     float: left;
+    margin-left: 1px;
 
 }
 #cuadrin>h2{
@@ -163,10 +192,28 @@ html, body {
 }
 
 #foot{
-    height: 200px;
+    height: 100px;
     width: 100%;
     max-width: 100%;
     padding:0;
     margin:0;
     background-color: whitesmoke;
+    text-align: center;
+    padding-top: 10px;
+}
+.youtube{
+    font-size: 40px;
+    color: black;
+}
+.facebook{
+    font-size: 40px;
+    color: black;
+}
+.twitter{
+    font-size: 40px;
+    color: black;
+}
+.instagram{
+    font-size: 40px;
+    color: black;
 }
