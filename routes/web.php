@@ -28,6 +28,11 @@ Route::get('/map', function(){
     return view('map.map');
   });
 
+/*
+ * Email verification route
+ */
+Route::get('/verifyemail/{token}', 'Auth\RegisterController@verify');
+
 Route::get('/formularios', function () {
     return view('formularios');
 });
