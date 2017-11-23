@@ -50,3 +50,11 @@ Route::post('/bebidassel', function () {
     return view('bebidassel');
 
 });
+Route::get('/bebcomsel', function () {
+    return view('bebcomsel');
+});
+
+Route::post('/bebcomsel', function () {
+    return view('bebcomsel');
+
+});
