@@ -20,7 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-
 /*
 Map route
 */
@@ -31,7 +30,7 @@ Route::get('/map', function(){
 /*
  * Email verification route
  */
-Route::get('/verifyemail/{token}', 'Auth\RegisterController@verify');
+Route::get('/verify/{token}', 'Auth\RegisterController@verify');
 
 Route::get('/formularios', function () {
     return view('formularios');
