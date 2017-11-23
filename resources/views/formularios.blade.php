@@ -58,7 +58,7 @@
                                 </div>
                             </form>
                         @else
-                            <form class="bebcom">
+                            <form class="bebcom" method="post" action="bebcomsel">
                                 <h2>Comida</h2>
                                 <div>
                                     <input type="checkbox" value="pintxos" name="comida[]" />
@@ -90,7 +90,7 @@
                                     <label>Alcoholicas</label><br>
                                 </div>
                                 <div>
-                                    <input type="checkbox" value="noalcoholicas" name="bebida[]" />
+                                    <input type="checkbox" value="noAlcoholicas" name="bebida[]" />
                                     <label>No alcoholicas</label><br>
                                 </div>
                                 <div id="boton">
