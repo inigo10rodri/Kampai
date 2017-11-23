@@ -46,6 +46,7 @@ Route::post('/comidassel', function () {
 Route::get('/comidassel', function () {
     return view('comidassel');
 });
+
 Route::get('/bebidassel', function () {
     return view('bebidassel');
 });
