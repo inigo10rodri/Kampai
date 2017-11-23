@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Kampai</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -14,35 +14,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="css/estiloWelcome.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
-              integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
-              crossorigin=""/>
-        <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
-                integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
-                crossorigin=""></script>
-        <script>
 
-            function initmap()
-            {
-                var mymap = L.map('mapid').setView([ 43.3172,-1.97325],17);
-
-                L.tileLayer('https://api.mapbox.com/styles/v1/marborav/cj9x42mma6cqq2sp7e7gadryt/tiles/256/{z}/{x}/{y}?access_token={accessToken}', {
-                    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-                    maxZoom: 20,
-                    id: 'mapbox.streets',
-                    accessToken: 'pk.eyJ1IjoibWFyYm9yYXYiLCJhIjoiY2o5eDJrbTV0N2NncjJxcXljeDR3cXNhMiJ9.igTamTLm4nLiAN6w8NFS6Q'
-                }).addTo(mymap);
-
-                var marker = L.marker([51.5, -0.09]).addTo(mymap);
-
-
-            }
-
-            function onMapClick(e) {
-                popup.setLatLng(e.latlng).setContent("You clicked the map at " + e.latlng.toString()).openOn(mymap);
-            }
-
-        </script>
 
     </head>
     <body>
@@ -135,12 +107,7 @@
                     </div>
 
                 </div>
-                <div id="mapid"></div>
-                <script type="text/javascript">
-
-                    initmap();
-
-                </script>
+                @include('map.map')
 
             </div>
             <div id="foot">
