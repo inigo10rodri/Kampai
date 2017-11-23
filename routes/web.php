@@ -19,13 +19,17 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-
 /*
 Map route
 */
 Route::get('/map', function(){
     return view('map.map');
   });
+
+/*
+ * Email verification route
+ */
+Route::get('/verify/{token}', 'Auth\RegisterController@verify');
 
 Route::get('/formularios', function () {
     return view('formularios');
@@ -41,6 +45,7 @@ Route::post('/comidassel', function () {
 Route::get('/comidassel', function () {
     return view('comidassel');
 });
+
 Route::get('/bebidassel', function () {
     return view('bebidassel');
 });
