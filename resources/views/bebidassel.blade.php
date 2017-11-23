@@ -15,7 +15,7 @@
                                     <input type="checkbox" value="cerveza" name=""/>
                                     <label>Cerveza</label><br>
                                 </div>
-                            @elseif($_POST['bebidas'] == "noalcoholicas")
+                            @elseif($_POST['bebidas'] == "noAlcoholicas")
                                 <h2>No alcoholicas</h2>
                                 <div>
                                     <input type="checkbox" value="cafe" name=""/>
@@ -23,8 +23,6 @@
                                 </div>
 
                             @endif
-
-
                     </div>
                 </div>
             </div>
