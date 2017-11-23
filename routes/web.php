@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -50,3 +49,13 @@ Route::post('/bebidassel', function () {
     return view('bebidassel');
 
 });
+
+/*
+ *  Admin simple
+ *
+ */
+Route::get('/admin', function(){
+    return view('admin.home');
+})->middleware('admin');
+
+
