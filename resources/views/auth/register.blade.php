@@ -70,6 +70,21 @@
                         </div>
                     </form>
                 </div>
+                <div id="test" class="col-md-4">
+                    <div class="aro-pswd_info">
+                        <div id="pswd_info">
+                            <h4>Requesitos de la contraseña</h4>
+                            <ul>
+                                <li id="letter" class="invalid">Tiene <strong>una letra</strong></li>
+                                <li id="capital" class="invalid">Tiene <strong>una letra en mayuscula</strong></li>
+                                <li id="number" class="invalid">Tiene <strong>un numero</strong></li>
+                                <li id="length" class="invalid">Tiene minimo <strong>8 caracteres</strong></li>
+                                <li id="space" class="invalid">Debe<strong> usar [~,!,@,#,$,%,^,&,*,-,=,.,;,']</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

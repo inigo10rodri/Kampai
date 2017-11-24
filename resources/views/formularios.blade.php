@@ -57,8 +57,9 @@
                                     <input type="submit" class="btn btn-default" value="Siguiente" />
                                 </div>
                             </form>
-                        @else
-                            <form class="bebcom">
+                        @elseif ($_POST['accion'] == "bebcom")
+                            <form class="bebcom" method="post" action="bebcomsel">
+                                {{ csrf_field()}}
                                 <h2>Comida</h2>
                                 <div>
                                     <input type="checkbox" value="pintxos" name="comida[]" />
@@ -86,11 +87,11 @@
                                 </div>
                                 <h2>Bebidas</h2>
                                 <div>
-                                    <input type="checkbox" value="alcoholicas" name="bebida[]"/>
+                                    <input type="radio" value="alcoholicas" name="bebidas"/>
                                     <label>Alcoholicas</label><br>
                                 </div>
                                 <div>
-                                    <input type="checkbox" value="noalcoholicas" name="bebida[]" />
+                                    <input type="radio" value="noAlcoholicas" name="bebidas" />
                                     <label>No alcoholicas</label><br>
                                 </div>
                                 <div id="boton">

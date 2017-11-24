@@ -19,6 +19,8 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+
 .fix { overflow: hidden }
 h1,
 h2,
@@ -49,6 +51,7 @@ a:hover { text-decoration: none }
     margin:180px auto;
     position:absolute;
     background-color: rgba(128, 128, 128, 0.2);
+    float: right;
 
 }
 .caption{margin-bottom:50px;}

@@ -12,7 +12,7 @@ function initmap()
     }).addTo(mymap);
 
 
-    mymap.locate({setView: true, maxZoom: 16});
+    mymap.locate({setView: true, maxZoom: 24});
 
     mymap.on('locationfound', onLocationFound);
 
@@ -23,7 +23,7 @@ function initmap()
 
 
 function onLocationFound(e) {
-    var radius = e.accuracy / 2;
+    var radius = e.accuracy / 10;
 
     L.marker(e.latlng).addTo(mymap)
         .bindPopup("Estás situado" + radius + " dentro de este radio").openPopup();

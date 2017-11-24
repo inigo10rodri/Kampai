@@ -63,4 +63,7 @@ Route::get('/admin', function(){
     return view('admin.home');
 })->middleware('admin');
 
+Route::post('/bebcomsel', function () {
+    return view('bebcomsel');
+});
 
