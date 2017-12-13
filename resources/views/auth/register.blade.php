@@ -70,10 +70,10 @@
                         </div>
                     </form>
                 </div>
-                <div id="test" class="col-md-4">
+                <!-- <div id="test" class="col-md-4">
                     <div class="aro-pswd_info">
                         <div id="pswd_info">
-                            <h4>Requesitos de la contraseña</h4>
+                            <h4>Requisitos de la contraseña</h4>
                             <ul>
                                 <li id="letter" class="invalid">Tiene <strong>una letra</strong></li>
                                 <li id="capital" class="invalid">Tiene <strong>una letra en mayuscula</strong></li>
@@ -83,7 +83,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>

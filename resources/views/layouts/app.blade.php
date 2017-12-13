@@ -8,11 +8,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link rel="stylesheet" href="{{asset('css/registrar-estilo.css')}}">
-    <link rel="stylesheet" href="/css/registrar-estilo.css">
+    <link rel="stylesheet" href="css/registrar-estilo.css">
 
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('APP_NAME', 'Kampai') }}</title>
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <script src="{{asset('js/registrar.js')}}"></script>
     <!-- Styles -->
@@ -37,7 +35,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        {{ config('APP_NAME', 'Kampai') }}
                     </a>
                 </div>
 

@@ -54,6 +54,14 @@ Route::post('/bebidassel', function () {
     return view('bebidassel');
 
 });
+Route::get('/acceder', function () {
+    return view('auth.acceder');
+});
+
+Route::post('/acceder', function () {
+    return view('auth.acceder');
+});
+
 
 /*
  *  Admin simple
