@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'email_token', 'admin'
+        'name', 'email', 'password', 'email_token', 'admin','bar'
     ];
 
     /**
@@ -32,5 +32,8 @@ class User extends Authenticatable
 
         return $this->admin;
 
+    }
+    public function isBar(){
+        return $this->bar;
     }
 }

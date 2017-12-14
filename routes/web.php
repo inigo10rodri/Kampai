@@ -75,3 +75,14 @@ Route::post('/bebcomsel', function () {
     return view('bebcomsel');
 });
 
+/*Route::get('/bar', function(){
+    return view('bar.home');
+})->middleware('bar');*/
+
+Route::post('/barUser','usuBarController@anadirUsuBar')->name('usuBar');
+
+Route:: get('/usuBarRegister',function(){
+    return view('auth.usuBarRegister');
+});
+
+

@@ -70,7 +70,7 @@
                             </form>
                         </div>
                         <div class="barLogin">
-                            <form class="form-horizontal" method="POST" action="{{ route('login') }}">
+                            <form class="form-horizontal" method="POST" action="/barUser">
                                 {{ csrf_field() }}
                                 <div class="form-group">
                                     <label class="col-md-6 control-label">Accede con tu bar</label>
@@ -126,7 +126,7 @@
                                 <div class="form-group">
                                     <div  class="col-md-6 control-label">
                                         <label>Eres un nuevo establecimiento?</label>
-                                        <a href="{{ route('register') }}">Registrate</a>
+                                        <a href="usuBarRegister">Registrate</a>
                                     </div>
                                 </div>
                             </form>

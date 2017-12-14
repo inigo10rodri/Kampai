@@ -20,6 +20,8 @@ class RedirectIfAuthenticated
         if (Auth::guard($guard)->check()) {
             if (Auth::user()->isAdmin()) {
                 return redirect('/admin');
+            }elseif (Auth::user()->isBar()){
+                return redirect('/bar');
             }
             return redirect('/home');
         }

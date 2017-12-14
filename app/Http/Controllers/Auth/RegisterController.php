@@ -88,9 +88,9 @@ class RegisterController extends Controller
 
         event(new Registered($user = $this->create($request->all())));
 
-        dispatch(new SendVerificationEmail($user));
+        //dispatch(new SendVerificationEmail($user));
 
-        return view('email.verification');
+        //return view('email.verification');
     }
 
     /**

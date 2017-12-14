@@ -83,6 +83,7 @@
                 </div>
 
                </div>
+                @include('map.map')
                 <div id="info">
                     <div id="pnaizq">
                         <i class="fa fa-beer fa-2x" aria-hidden="true"></i>
@@ -106,8 +107,6 @@
                     </div>
 
                 </div>
-                @include('map.map')
-
             </div>
             <div id="foot">
                 <a href="http://www.youtube.com" target="_blank" class="youtube"><span class="fa fa-youtube"></span> </a>

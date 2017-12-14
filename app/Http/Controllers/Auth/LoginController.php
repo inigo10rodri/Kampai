@@ -42,6 +42,8 @@ class LoginController extends Controller
     {
         if ( $user->admin) {
             return redirect('/admin');
+        }elseif ($user->bar){
+            return redirect('/bar');
         }
 
         return redirect('/home');
