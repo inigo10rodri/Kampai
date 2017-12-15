@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class barUser extends Model
+class BarUser extends Model
 {
-    protected $table=['bar_users'];
+    protected $table='bar_users';
 
     protected $fillable=['nombre','correo','contrasena'];
 

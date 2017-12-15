@@ -62,6 +62,10 @@ Route::post('/acceder', function () {
     return view('auth.acceder');
 });
 
+Route::post('/bebcomsel', function () {
+    return view('bebcomsel');
+});
+
 
 /*
  *  Admin simple
@@ -71,18 +75,20 @@ Route::get('/admin', function(){
     return view('admin.home');
 })->middleware('admin');
 
-Route::post('/bebcomsel', function () {
-    return view('bebcomsel');
-});
-
-/*Route::get('/bar', function(){
+Route::get('/bar', function(){
     return view('bar.home');
-})->middleware('bar');*/
+})->middleware('bar');
 
-Route::post('/barUser','usuBarController@anadirUsuBar')->name('usuBar');
+/*Route:: get('/barUser',function(){
+    return view('bar.home');
+});
+Route::post('/barUser','UsuBarController@anadirUsuBar');
 
 Route:: get('/usuBarRegister',function(){
     return view('auth.usuBarRegister');
-});
+});*/
 
+Route::get('/loginBar', function () {
+    return view('auth.login');
+});
 

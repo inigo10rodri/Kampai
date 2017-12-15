@@ -15,12 +15,11 @@
         <link href="css/estiloWelcome.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
     </head>
     <body>
 
 
-    <nav class="navbar navbar-inverse navbar-static-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
 
@@ -43,8 +42,6 @@
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
                     @guest
-                        <li><a href="{{ route('login') }}">Login</a></li>
-                        <li><a href="{{ route('register') }}">Register</a></li>
                         <li><a href="acceder"><span class="glyphicon glyphicon-user"></span>Acceder</a></li>
                         @else
                             <li class="dropdown">
@@ -115,7 +112,6 @@
                 <a href="http://www.instagram.com" target="_blank" class="instagram"><span class="fa fa-instagram"></span> </a>
                 <p>Todos los derechos reservados equipo Ninja Purpura 2017&copy;</p>
             </div>
-
 
     </body>
 </html>

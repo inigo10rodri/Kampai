@@ -8,29 +8,29 @@
                     <div class="panel-heading">Register</div>
 
                     <div class="panel-body">
-                        <form class="form-horizontal" method="POST" action="{{route('usuBar')}}">
+                        <form class="form-horizontal" method="POST" action="barUser">
                             {{ csrf_field() }}
 
                             <div class="form-group">
                                 <label for="name" class="col-md-4 control-label">Nombre:</label>
 
                                 <div class="col-md-6">
-                                    <input id="name" type="text" class="form-control" name="nombre" required autofocus>
+                                    <input  type="text" class="form-control" name="nombre" required autofocus>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="email" class="col-md-4 control-label">Correo:</label>
 
                                 <div class="col-md-6">
-                                    <input id="email" type="email" class="form-control" name="correo" required>
+                                    <input  type="email" class="form-control" name="correo" required>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="password" class="col-md-4 control-label">Contraseña:</label>
+                                <label class="col-md-4 control-label">Contraseña:</label>
 
                                 <div class="col-md-6">
-                                    <input id="password" type="password" class="form-control" name="contrasena" required>
+                                    <input type="password" class="form-control" name="contrasena" required>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -41,6 +41,15 @@
                                 </div>
                             </div>
                         </form>
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
                     </div>
                 </div>
             </div>
