@@ -14,7 +14,8 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="css/estiloWelcome.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     <body>
 
@@ -35,6 +36,7 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('APP_NAME', 'Kampai') }}
                 </a>
+
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -76,7 +78,7 @@
                     Encuentra lo que quieres comer y beber!
                 </div>
                 <div class="buscador">
-                    <input type="search" placeholder="Search...">
+                    <button href="sidebar" class="glyphicon glyphicon-th-list"></button><input type="search" placeholder="Search...">
                 </div>
 
                </div>

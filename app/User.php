@@ -36,4 +36,8 @@ class User extends Authenticatable
     public function isBar(){
         return $this->bar;
     }
+
+    public function bar(){
+        return $this->hasOne('App/Bar');
+    }
 }

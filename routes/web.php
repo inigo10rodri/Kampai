@@ -91,4 +91,7 @@ Route:: get('/usuBarRegister',function(){
 Route::get('/loginBar', function () {
     return view('auth.login');
 });
+Route::get('sidebar',function(){
+    return view('sidebar');
+});
 
